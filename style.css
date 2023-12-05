@@ -9,11 +9,17 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
-  background: radial-gradient(
-    circle,
-    rgba(25rgba (255, 255, 255, 0) 5, 255, 0),
-    white
-  );
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Optional: Style links on hover */
+a:hover {
+  text-decoration: none;
 }
 
 #gradient {
@@ -26,14 +32,14 @@ body {
   flex: 0 0 40%;
   overflow: hidden;
   text-align: center;
-  padding-left: 10vw;
+  padding-left: 8vw;
 }
 
 .right {
   position: relative;
   width: 600px;
   overflow-y: auto;
-  padding-right: 6vw;
+  padding-right: 2vw;
   scroll-behavior: smooth;
 }
 .name {
@@ -46,7 +52,7 @@ body {
   font-size: 1.4em;
   font-weight: 300;
   margin-top: 0;
-
+  color: #ffec9d;
   margin-bottom: 1em;
 }
 
@@ -99,13 +105,24 @@ body {
   margin-top: 4em;
 }
 
+.scoial-link,
+svg {
+  fill: rgba(255, 255, 255, 0.306);
+  transition: all 0.2s ease-in;
+}
+
+.scoial-link,
+svg:hover {
+  fill: rgba(255, 255, 255, 0.678);
+}
+
 h3 {
   font-size: 1.6em;
   margin-bottom: 0;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -119,7 +136,6 @@ h4 {
   display: flex;
   justify-content: left;
   gap: 2em;
-  margin-top: 2em;
 }
 
 .date {
@@ -147,6 +163,7 @@ h4 {
 
 .job-description {
   color: rgb(203, 203, 203);
+  margin-bottom: 0;
 }
 
 .blue {
@@ -198,22 +215,10 @@ h4 {
 }
 
 .project-item {
+  position: relative;
   display: flex;
   justify-content: left;
   gap: 2em;
-  margin-top: 2em;
-}
-
-.skills .skill-set:nth-child(2) {
-  padding-left: 100px;
-}
-
-.skills .skill-set:nth-child(3) {
-  padding-left: 300px;
-}
-
-.skill-set {
-  margin-top: 2em;
 }
 
 .skill-set h4 {
@@ -338,46 +343,75 @@ h4 {
   transition: all 0.2s;
 }
 
-/* blue */
-.style-5:hover {
+.style-5:hover#experience-link {
   color: #5ce1e6;
 }
-.style-5:hover > .the-arrow.-left > .shaft {
+.style-5.active#experience-link {
+  color: #5ce1e6;
+}
+.style-5:hover#projects-link {
+  color: #ef8181;
+}
+.style-5.active#projects-link {
+  color: #ef8181;
+}
+.style-5:hover#skills-link {
+  color: #ffec9d;
+}
+.style-5.active#skills-link {
+  color: #ffec9d;
+}
+
+.style-5:hover > .the-arrow.-left > .shaft,
+.style-5.active > .the-arrow.-left > .shaft {
   width: 64px;
   transition-delay: 0.1s;
   background-color: #808080;
 }
+
 .style-5:hover > .the-arrow.-left > .shaft:before,
-.style-5:hover > .the-arrow.-left > .shaft:after {
+.style-5:hover > .the-arrow.-left > .shaft:after,
+.style-5.active > .the-arrow.-left > .shaft:before,
+.style-5.active > .the-arrow.-left > .shaft:after {
   width: 8px;
   transition-delay: 0.1s;
   background-color: #808080;
 }
-.style-5:hover > .the-arrow.-left > .shaft:before {
+.style-5:hover > .the-arrow.-left > .shaft:before,
+.style-5.active > .the-arrow.-left > .shaft:before {
   transform: rotate(40deg);
 }
-.style-5:hover > .the-arrow.-left > .shaft:after {
+.style-5:hover > .the-arrow.-left > .shaft:after,
+.style-5.active > .the-arrow.-left > .shaft:after {
   transform: rotate(-40deg);
 }
-.style-5:hover > .main {
+.style-5:hover > .main,
+.style-5.active > .main {
   transform: translateX(17px);
   transform: translateX(80px);
 }
-.style-5:hover > .main > .the-arrow.-right > .shaft {
+.style-5:hover > .main > .the-arrow.-right > .shaft,
+.style-5.active > .main > .the-arrow.-right > .shaft {
   width: 0;
   transform: translateX(200%);
   transition-delay: 0;
 }
 .style-5:hover > .main > .the-arrow.-right > .shaft:before,
-.style-5:hover > .main > .the-arrow.-right > .shaft:after {
+.style-5:hover > .main > .the-arrow.-right > .shaft:after,
+.style-5.active > .main > .the-arrow.-right > .shaft:before,
+.style-5.active > .main > .the-arrow.-right > .shaft:after {
   width: 0;
   transition-delay: 0;
   transition: all 0.1s;
 }
-.style-5:hover > .main > .the-arrow.-right > .shaft:before {
+.style-5:hover > .main > .the-arrow.-right > .shaft:before,
+.style-5:hover > .main > .the-arrow.-right > .shaft:before,
+.style-5.active > .main > .the-arrow.-right > .shaft:before,
+.style-5.active > .main > .the-arrow.-right > .shaft:before {
   transform: rotate(0);
 }
-.style-5:hover > .main > .the-arrow.-right > .shaft:after {
+.style-5:hover > .main > .the-arrow.-right > .shaft:after,
+.style-5.active > .main > .the-arrow.-right > .shaft:after {
   transform: rotate(0);
 }
 .style-5 > .main {
@@ -400,10 +434,62 @@ img {
   border-radius: 6px;
 }
 .project-image {
-  flex: 0 0 200px;
+  flex: 0 0 160px;
 }
 
 .symbol {
   font-weight: 900;
-  color: #ffec9d;
+  color: white;
+}
+
+.panel {
+  padding: 20px;
+  margin-top: 1em;
+  overflow: hidden;
+  transition: background 0.2s ease-in-out;
+}
+
+.panel:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Adjust the alpha value for transparency */
+  border-radius: 6px; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+  margin-top: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  backdrop-filter: blur(20px); /* Adjust the blur amount as needed */
+  overflow: hidden; /* Ensure the content doesn't overflow */
+  border-top: 1px solid rgba(255, 255, 255, 0.272);
+}
+
+.link-icon {
+  fill: rgba(255, 255, 255, 0.477);
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.pixel-dude {
+  width: 100px;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer > .text-small {
+  padding: 20px 0;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+footer .text-small > span {
+  font-weight: 700;
 }

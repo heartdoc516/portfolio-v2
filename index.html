@@ -36,7 +36,7 @@
       </div>
       <div class="links">
         <div class="linkWrap">
-          <a class="style-5" href="#experience">
+          <a class="style-5 link" id="experience-link" href="#experience">
             <span class="the-arrow -left">
               <span class="shaft"></span>
             </span>
@@ -49,7 +49,7 @@
           </a>
         </div>
         <div class="linkWrap">
-          <a class="style-5" href="#projects">
+          <a class="style-5 link" id="projects-link" href="#projects">
             <span class="the-arrow -left">
               <span class="shaft"></span>
             </span>
@@ -62,7 +62,7 @@
           </a>
         </div>
         <div class="linkWrap">
-          <a class="style-5" href="#skills">
+          <a class="style-5 link" id="skills-link" href="#skills">
             <span class="the-arrow -left">
               <span class="shaft"></span>
             </span>
@@ -80,7 +80,6 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
-            fill="white"
             viewBox="0 0 496 512"
           >
             <path
@@ -93,7 +92,6 @@
           class="social-link"
         >
           <svg
-            fill="white"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             viewBox="0 0 448 512"
@@ -125,133 +123,186 @@
         ways to do it. If I'm not in front of a computer, I'm probably playing
         with my best buddy Cooper, a friendly German Sheperd.
       </p>
-      <h3 class="blue" id="experience">Experience</h3>
-      <div class="experience-item">
-        <div class="date">2023 - PRESENT</div>
-        <div>
-          <h4>Full-stack Web Developer</h4>
-          <div>Libéo</div>
-          <p class="job-description">
-            Developed high quality websites and applications for various major
-            clients such as Québec Entrepreneurs Schools, Laval University, and
-            Old Port of Montreal
-          </p>
-          <ul class="stack">
-            <li class="bg-blue">PHP</li>
-            <li class="bg-blue">Laravel</li>
-            <li class="bg-blue">Vue.js</li>
-            <li class="bg-blue">Nuxt.js</li>
-          </ul>
-        </div>
-      </div>
+      <section>
+        <h3 class="blue" id="experience">Experience</h3>
+        <div class="panel">
+          <div class="experience-item">
+            <div class="date">2023 - PRESENT</div>
+            <div>
+              <h4>Full-stack Web Developer</h4>
+              <div class="text-small">Libéo</div>
+              <p class="job-description">
+                Developed high quality websites and applications for various
+                major clients such as Québec Entrepreneurs Schools, Laval
+                University, and Old Port of Montreal
+              </p>
+              <ul class="stack">
+                <li class="bg-blue">PHP</li>
+                <li class="bg-blue">Laravel</li>
+                <li class="bg-blue">Vue.js</li>
+                <li class="bg-blue">Nuxt.js</li>
+              </ul>
+            </div>
+          </div>
 
-      <div class="experience-item">
-        <div class="date">2022 - 2023</div>
-        <div>
-          <h4>Javascript and Algorithms Mentorship</h4>
-          <div>O'Sullivan College</div>
-          <p class="job-description">
-            At the demand of the college administration, I accepted to mentor
-            students having a hard time with programing to help them succeed.
-            This greatly reinforced my understanding and my technical
-            communication.
-          </p>
+          <div class="experience-item">
+            <div class="date">2022 - 2023</div>
+            <div>
+              <h4>Javascript and Algorithms Mentorship</h4>
+              <div class="text-small">O'Sullivan College</div>
+              <p class="job-description">
+                At the demand of the college administration, I accepted to
+                mentor students having a hard time with programing to help them
+                succeed. This greatly reinforced my understanding and my
+                technical communication.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <h3 class="red" id="projects">Professional Projects</h3>
-      <div class="project-item">
-        <div class="project-image"><img src="eeq.PNG" alt="" /></div>
-        <div>
-          <h4>
-            Québec Entrepreneur Schools
-            <span class="dot">&#183;</span>
-            <span class="text-small">Libéo</span>
-          </h4>
-          <p class="job-description">
-            An e-learning multi-platforme for Entrepreneurs accross the
-            province.
-          </p>
-          <ul class="stack">
-            <li class="bg-red">PHP</li>
-            <li class="bg-red">Laravel</li>
-            <li class="bg-red">Vue.js</li>
-            <li class="bg-red">Nuxt.js</li>
-          </ul>
+      <section>
+        <h3 class="red" id="projects">Professional Projects</h3>
+        <a href="https://app.eequebec.com/connexion" class="project-item panel">
+          <div class="project-image"><img src="eeq.PNG" alt="" /></div>
+          <div>
+            <h4>
+              Québec Entrepreneur Schools
+              <span class="dot">&#183;</span>
+              <span class="text-small">Libéo</span>
+            </h4>
+            <p class="job-description">
+              An e-learning multi-platforme for Entrepreneurs accross the
+              province.
+            </p>
+            <ul class="stack">
+              <li class="bg-red">PHP</li>
+              <li class="bg-red">Laravel</li>
+              <li class="bg-red">Vue.js</li>
+              <li class="bg-red">Nuxt.js</li>
+            </ul>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+            class="link-icon"
+          >
+            <path
+              d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://www.coopzone.ca/" class="project-item panel">
+          <div class="project-image"><img src="coop-zone.PNG" alt="" /></div>
+
+          <div>
+            <h4>
+              Coop-Zone - Laval University
+              <span class="dot">&#183;</span>
+              <span class="text-small">Libéo</span>
+            </h4>
+            <p class="job-description">
+              A large scale e-commerce website developed in a microservices
+              architecture.
+            </p>
+            <ul class="stack">
+              <li class="bg-red">Node.js</li>
+              <li class="bg-red">Vue.js</li>
+              <li class="bg-red">MongoDB</li>
+            </ul>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+            class="link-icon"
+          >
+            <path
+              d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://www.vieuxportdemontreal.com/"
+          class="project-item panel"
+        >
+          <div class="project-image"><img src="vpmo.PNG" alt="" /></div>
+
+          <div>
+            <h4>
+              Old Port of Montreal
+              <span class="dot">&#183;</span>
+              <span class="text-small">Libéo</span>
+            </h4>
+            <p class="job-description">
+              A large corporate website made with Drupal CMS using custom
+              modules.
+            </p>
+            <ul class="stack">
+              <li class="bg-red">PHP</li>
+              <li class="bg-red">Drupal</li>
+              <li class="bg-red">Twig</li>
+            </ul>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+            class="link-icon"
+          >
+            <path
+              d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+            />
+          </svg>
+        </a>
+      </section>
+
+      <section>
+        <h3 class="yellow" id="skills">Technical Skills</h3>
+        <div class="skills panel">
+          <div class="skill-set">
+            <h4>Programming Languages</h4>
+            <ul class="stack">
+              <li class="bg-yellow">PHP</li>
+              <li class="bg-yellow">Javascript</li>
+              <li class="bg-yellow">Node.js</li>
+            </ul>
+          </div>
+          <div class="skill-set">
+            <h4>Libraries and Frameworks</h4>
+            <ul class="stack">
+              <li class="bg-yellow">Laravel</li>
+              <li class="bg-yellow">Vue.js</li>
+              <li class="bg-yellow">Nuxt.js</li>
+              <li class="bg-yellow">React</li>
+              <li class="bg-yellow">Next.js</li>
+            </ul>
+          </div>
+          <div class="skill-set">
+            <h4>Tools and CMS</h4>
+            <ul class="stack">
+              <li class="bg-yellow">VS Code</li>
+              <li class="bg-yellow">Drupal</li>
+              <li class="bg-yellow">Wordpress</li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div class="project-item">
-        <div class="project-image"><img src="coop-zone.PNG" alt="" /></div>
-
-        <div>
-          <h4>
-            Coop-Zone - Laval University
-            <span class="dot">&#183;</span>
-            <span class="text-small">Libéo</span>
-          </h4>
-          <p class="job-description">
-            A large scale e-commerce website developed in a microservices
-            architecture.
-          </p>
-          <ul class="stack">
-            <li class="bg-red">Node.js</li>
-            <li class="bg-red">Vue.js</li>
-            <li class="bg-red">MongoDB</li>
-          </ul>
+      </section>
+      <footer>
+        <div class="text-small">
+          Coded by me with the old school tech trio: <span>HTML</span>,
+          <span>CSS</span>, and <span>Javascript</span>
+          <br />
+          Francis Plante @2023
         </div>
-      </div>
-
-      <div class="project-item">
-        <div class="project-image"><img src="vpmo.PNG" alt="" /></div>
-
-        <div>
-          <h4>
-            Old Port of Montreal
-            <span class="dot">&#183;</span>
-            <span class="text-small">Libéo</span>
-          </h4>
-          <p class="job-description">
-            A large corporate website made with Drupal CMS using custom modules.
-          </p>
-          <ul class="stack">
-            <li class="bg-red">PHP</li>
-            <li class="bg-red">Drupal</li>
-            <li class="bg-red">Twig</li>
-          </ul>
-        </div>
-      </div>
-
-      <h3 class="yellow" id="skills">Technical Skills</h3>
-
-      <div class="skills">
-        <div class="skill-set">
-          <h4>Programming Languages</h4>
-          <ul class="stack">
-            <li class="bg-yellow">PHP</li>
-            <li class="bg-yellow">Javascript</li>
-            <li class="bg-yellow">Node.js</li>
-          </ul>
-        </div>
-        <div class="skill-set">
-          <h4>Libraries and Frameworks</h4>
-          <ul class="stack">
-            <li class="bg-yellow">Laravel</li>
-            <li class="bg-yellow">Vue.js</li>
-            <li class="bg-yellow">Nuxt.js</li>
-            <li class="bg-yellow">React</li>
-            <li class="bg-yellow">Next.js</li>
-          </ul>
-        </div>
-        <div class="skill-set">
-          <h4>Tools and CMS</h4>
-          <ul class="stack">
-            <li class="bg-yellow">VS Code</li>
-            <li class="bg-yellow">Drupal</li>
-            <li class="bg-yellow">Wordpress</li>
-          </ul>
-        </div>
-      </div>
+        <img class="pixel-dude" src="8-direction.gif" alt="" />
+      </footer>
     </div>
   </body>
 </html>
