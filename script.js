@@ -1,5 +1,5 @@
 rightPanelElement = document.getElementById("right");
-gradientColor = "rgba(56,56,251,0.4)";
+
 function setGradient(e) {
   // Get the viewport width and height
   var vw = window.innerWidth;
@@ -10,7 +10,7 @@ function setGradient(e) {
 
   gradientElement = document.getElementById("gradient");
 
-  gradientElement.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%, ${gradientColor} 0%, rgba(6,0,34,0.4) 40%)`;
+  gradientElement.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%, rgba(0,255,240,0.1) 0%, rgba(0,71,78,0.2) 30%)`;
 }
 
 document.addEventListener("mousemove", setGradient);

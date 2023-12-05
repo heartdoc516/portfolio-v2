@@ -16,13 +16,13 @@
   <body>
     <div id="gradient"></div>
     <div class="left">
-      <h1 class="name">Francis Plante</h1>
+      <h1 class="name" id="name">Francis Plante</h1>
       <h2 class="title">
-        <span class="symbol">< </span>Web Developer<span class="symbol">
-          /></span
+        <span class="symbol"
+          >&lt; <span id="title">Web Developer</span> &#47;&gt;</span
         >
       </h2>
-      <h2 class="description">
+      <h2 class="description" id="description">
         I transform coffee into exceptional web sites and applications,
         <br />
         and I have fun doing it.
@@ -35,6 +35,19 @@
         />
       </div>
       <div class="links">
+        <div class="linkWrap">
+          <a class="style-5 link" id="about-link" href="#about">
+            <span class="the-arrow -left">
+              <span class="shaft"></span>
+            </span>
+            <span class="main">
+              <span class="text"> About </span>
+              <span class="the-arrow -right">
+                <span class="shaft"></span>
+              </span>
+            </span>
+          </a>
+        </div>
         <div class="linkWrap">
           <a class="style-5 link" id="experience-link" href="#experience">
             <span class="the-arrow -left">
@@ -104,30 +117,37 @@
       </div>
     </div>
     <div class="right" id="right">
-      <p class="bio">
-        Back in 2017, I was graduating from College with a Degree in Police
-        Techniques. After a few years of unsuccessful applications and deep
-        reflexions, I realised I was meant for something more mentally
-        stimulating. This is when I started exploring web development and
-        programming, which evolved into a deep passion for it.
-        <br />
-        <br />
-        In october 2023, I graduated from College with an Associate degree in
-        Web Development and landed a postition at Libeo, a reputable web
-        solutions company in Quebec City. These days, I focus on building web
-        applications with React or Vue.js on the front-end, and PHP and Laravel
-        on the backend.
-        <br />
-        <br />
-        If I'm not building some type of software, I'm probably learning better
-        ways to do it. If I'm not in front of a computer, I'm probably playing
-        with my best buddy Cooper, a friendly German Sheperd.
-      </p>
+      <button id="toggle-language">en / fr</button>
       <section>
-        <h3 class="blue" id="experience">Experience</h3>
+        <h3 id="about"><span>/ </span><span>about</span></h3>
+        <p class="bio" id="bio">
+          Back in 2017, I was graduating from College with a Degree in Police
+          Techniques. After a few years of unsuccessful applications and deep
+          reflection, I realized I was meant for something more mentally
+          stimulating. This is when I started exploring web development and
+          programming, which evolved into a deep passion for it.
+          <br />
+          <br />
+          In October 2023, I graduated from College with an Associate degree in
+          Web Development and landed a position at Libeo, a reputable web
+          solutions company in Quebec City. These days, I focus on building web
+          applications with React or Vue.js on the front end, and PHP and
+          Laravel on the back end.
+          <br />
+          <br />
+          If I'm not building some type of software, I'm probably learning
+          better ways to do it. If I'm not in front of a computer, I'm probably
+          playing with my best buddy Cooper, a friendly German shepherd.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="blue" id="experience">
+          <span>/ </span><span class="blue">experience</span>
+        </h3>
         <div class="panel">
           <div class="experience-item">
-            <div class="date">2023 - PRESENT</div>
+            <div class="date" id="date">2023 - PRESENT</div>
             <div>
               <h4>Full-stack Web Developer</h4>
               <div class="text-small">Libéo</div>
@@ -148,7 +168,7 @@
           <div class="experience-item">
             <div class="date">2022 - 2023</div>
             <div>
-              <h4>Javascript and Algorithms Mentorship</h4>
+              <h4 id="">Javascript and Algorithms Mentorship</h4>
               <div class="text-small">O'Sullivan College</div>
               <p class="job-description">
                 At the demand of the college administration, I accepted to
@@ -162,7 +182,7 @@
       </section>
 
       <section>
-        <h3 class="red" id="projects">Professional Projects</h3>
+        <h3 class="red" id="projects"><span>/ </span>professional projects</h3>
         <a href="https://app.eequebec.com/connexion" class="project-item panel">
           <div class="project-image"><img src="eeq.PNG" alt="" /></div>
           <div>
@@ -264,7 +284,7 @@
       </section>
 
       <section>
-        <h3 class="yellow" id="skills">Technical Skills</h3>
+        <h3 class="yellow" id="skills"><span>/ </span>technical skills</h3>
         <div class="skills panel">
           <div class="skill-set">
             <h4>Programming Languages</h4>
@@ -282,18 +302,21 @@
               <li class="bg-yellow">Nuxt.js</li>
               <li class="bg-yellow">React</li>
               <li class="bg-yellow">Next.js</li>
+              <li class="bg-yellow">Tailwind</li>
             </ul>
           </div>
           <div class="skill-set">
             <h4>Tools and CMS</h4>
             <ul class="stack">
               <li class="bg-yellow">VS Code</li>
+              <li class="bg-yellow">PHP Storm</li>
               <li class="bg-yellow">Drupal</li>
               <li class="bg-yellow">Wordpress</li>
             </ul>
           </div>
         </div>
       </section>
+      <div class="separator"></div>
       <footer>
         <div class="text-small">
           Coded by me with the old school tech trio: <span>HTML</span>,
