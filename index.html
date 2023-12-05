@@ -19,10 +19,14 @@
       <h1 class="name" id="name">Francis Plante</h1>
       <h2 class="title">
         <span class="symbol"
-          >&lt; <span id="title">Web Developer</span> &#47;&gt;</span
+          >&lt;
+          <span id="title" data-translate="professionalTitle"
+            >Web Developer</span
+          >
+          &#47;&gt;</span
         >
       </h2>
-      <h2 class="description" id="description">
+      <h2 class="description" id="description" data-translate="description">
         I transform coffee into exceptional web sites and applications,
         <br />
         and I have fun doing it.
@@ -41,7 +45,7 @@
               <span class="shaft"></span>
             </span>
             <span class="main">
-              <span class="text"> About </span>
+              <span class="text" data-translate="aboutLink"> About </span>
               <span class="the-arrow -right">
                 <span class="shaft"></span>
               </span>
@@ -54,7 +58,9 @@
               <span class="shaft"></span>
             </span>
             <span class="main">
-              <span class="text"> Experience </span>
+              <span class="text" data-translate="experienceLink">
+                Experience
+              </span>
               <span class="the-arrow -right">
                 <span class="shaft"></span>
               </span>
@@ -67,7 +73,7 @@
               <span class="shaft"></span>
             </span>
             <span class="main">
-              <span class="text"> Projects </span>
+              <span class="text" data-translate="projectsLink"> Projects </span>
               <span class="the-arrow -right">
                 <span class="shaft"></span>
               </span>
@@ -80,7 +86,7 @@
               <span class="shaft"></span>
             </span>
             <span class="main">
-              <span class="text"> Skills </span>
+              <span class="text" data-translate="skillsLink"> Skills </span>
               <span class="the-arrow -right">
                 <span class="shaft"></span>
               </span>
@@ -119,8 +125,10 @@
     <div class="right" id="right">
       <button id="toggle-language">en / fr</button>
       <section>
-        <h3 id="about"><span>/ </span><span>about</span></h3>
-        <p class="bio" id="bio">
+        <h3 id="about">
+          <span>/ </span><span data-translate="aboutTitle">about</span>
+        </h3>
+        <p class="bio" id="bio" data-translate="bio">
           Back in 2017, I was graduating from College with a Degree in Police
           Techniques. After a few years of unsuccessful applications and deep
           reflection, I realized I was meant for something more mentally
@@ -143,15 +151,20 @@
 
       <section>
         <h3 class="blue" id="experience">
-          <span>/ </span><span class="blue">experience</span>
+          <span>/ </span
+          ><span class="blue" data-translate="experienceTitle">experience</span>
         </h3>
         <div class="panel">
           <div class="experience-item">
-            <div class="date" id="date">2023 - PRESENT</div>
+            <div class="date" id="date" data-translate="dateLibeoJob">
+              2023 - PRESENT
+            </div>
             <div>
-              <h4>Full-stack Web Developer</h4>
+              <h4 data-translate="fullStackJobTitle">
+                Full-stack Web Developer
+              </h4>
               <div class="text-small">Libéo</div>
-              <p class="job-description">
+              <p class="job-description" data-translate="libeoJobDescription">
                 Developed high quality websites and applications for various
                 major clients such as Québec Entrepreneurs Schools, Laval
                 University, and Old Port of Montreal
@@ -168,9 +181,16 @@
           <div class="experience-item">
             <div class="date">2022 - 2023</div>
             <div>
-              <h4 id="">Javascript and Algorithms Mentorship</h4>
-              <div class="text-small">O'Sullivan College</div>
-              <p class="job-description">
+              <h4 data-translate="mentorJobDescription">
+                Javascript and Algorithms Mentorship
+              </h4>
+              <div class="text-small" data-translate="osullivanCollege">
+                O'Sullivan College
+              </div>
+              <p
+                class="job-description"
+                data-translate="osullivanJobDescription"
+              >
                 At the demand of the college administration, I accepted to
                 mentor students having a hard time with programing to help them
                 succeed. This greatly reinforced my understanding and my
@@ -182,16 +202,19 @@
       </section>
 
       <section>
-        <h3 class="red" id="projects"><span>/ </span>professional projects</h3>
+        <h3 class="red" id="projects">
+          <span>/ </span>
+          <span data-translate="projectsTitle">professional projects</span>
+        </h3>
         <a href="https://app.eequebec.com/connexion" class="project-item panel">
           <div class="project-image"><img src="eeq.PNG" alt="" /></div>
           <div>
-            <h4>
+            <h4 data-translate="eeqJobTitle">
               Québec Entrepreneur Schools
               <span class="dot">&#183;</span>
               <span class="text-small">Libéo</span>
             </h4>
-            <p class="job-description">
+            <p class="job-description" data-translate="eeqProjectDescription">
               An e-learning multi-platforme for Entrepreneurs accross the
               province.
             </p>
@@ -219,12 +242,15 @@
           <div class="project-image"><img src="coop-zone.PNG" alt="" /></div>
 
           <div>
-            <h4>
+            <h4 data-translate="coopzoneTitle">
               Coop-Zone - Laval University
               <span class="dot">&#183;</span>
               <span class="text-small">Libéo</span>
             </h4>
-            <p class="job-description">
+            <p
+              class="job-description"
+              data-translate="coopozoneProjectDescription"
+            >
               A large scale e-commerce website developed in a microservices
               architecture.
             </p>
@@ -254,12 +280,12 @@
           <div class="project-image"><img src="vpmo.PNG" alt="" /></div>
 
           <div>
-            <h4>
+            <h4 data-translate="vpmoTitle">
               Old Port of Montreal
               <span class="dot">&#183;</span>
               <span class="text-small">Libéo</span>
             </h4>
-            <p class="job-description">
+            <p class="job-description" data-translate="vpmoProjectDescription">
               A large corporate website made with Drupal CMS using custom
               modules.
             </p>
@@ -284,10 +310,15 @@
       </section>
 
       <section>
-        <h3 class="yellow" id="skills"><span>/ </span>technical skills</h3>
+        <h3 class="yellow" id="skills">
+          <span>/ </span
+          ><span data-translate="skillsTitle"> technical skills </span>
+        </h3>
         <div class="skills panel">
           <div class="skill-set">
-            <h4>Programming Languages</h4>
+            <h4 data-translate="programmingLanguagesTitle">
+              Programming Languages
+            </h4>
             <ul class="stack">
               <li class="bg-yellow">PHP</li>
               <li class="bg-yellow">Javascript</li>
@@ -295,7 +326,7 @@
             </ul>
           </div>
           <div class="skill-set">
-            <h4>Libraries and Frameworks</h4>
+            <h4 data-translate="frameworksTitle">Libraries and Frameworks</h4>
             <ul class="stack">
               <li class="bg-yellow">Laravel</li>
               <li class="bg-yellow">Vue.js</li>
@@ -306,7 +337,7 @@
             </ul>
           </div>
           <div class="skill-set">
-            <h4>Tools and CMS</h4>
+            <h4 data-translate="toolsTitle">Tools and CMS</h4>
             <ul class="stack">
               <li class="bg-yellow">VS Code</li>
               <li class="bg-yellow">PHP Storm</li>
@@ -318,12 +349,12 @@
       </section>
       <div class="separator"></div>
       <footer>
-        <div class="text-small">
-          Coded by me with the old school tech trio: <span>HTML</span>,
+        <div class="text-small" data-translate="footerText">
+          Coded by me with the old school tech trio: <span> HTML</span>,
           <span>CSS</span>, and <span>Javascript</span>
           <br />
-          Francis Plante @2023
         </div>
+        <div class="text-small">Francis Plante @2023</div>
         <img class="pixel-dude" src="8-direction.gif" alt="" />
       </footer>
     </div>
