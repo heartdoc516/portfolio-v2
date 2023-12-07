@@ -37,7 +37,7 @@ a:hover {
 
 .right {
   position: relative;
-  width: 50%;
+  width: 40%;
   overflow-y: auto;
   padding-right: 4em;
   scroll-behavior: smooth;
@@ -574,6 +574,14 @@ h3 span {
   color: white;
 }
 
+.footer-text {
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
+.footer-tag {
+  font-weight: 700;
+}
 @media only screen and (max-width: 1300px) {
   .left {
     padding-left: 0;

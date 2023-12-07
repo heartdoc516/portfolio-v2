@@ -97,7 +97,8 @@ const translations = {
     programmingLanguagesTitle: "Programming Languages",
     frameworksTitle: "Libraries and Frameworks",
     toolsTitle: "Tools and CMS",
-    footerText: "Coded by me with the old school tech trio:",
+    footerText: "Coded by me with the old school tech trio: ",
+    and: ", and",
   },
   fr: {
     professionalTitle: "Développeur web",
@@ -145,7 +146,8 @@ const translations = {
     programmingLanguagesTitle: "Langages des programmation",
     frameworksTitle: "LIbrairies et Frameworks",
     toolsTitle: "Outils et CMS",
-    footerText: "Codé par moi avec le trio technologique de la vieille école",
+    footerText: "Codé par moi avec le trio technologique de la vieille école: ",
+    and: ", et",
   },
 };
 
