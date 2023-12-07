@@ -108,7 +108,7 @@ const translations = {
     experienceLink: "Expérience",
     projectsLink: "Projets",
     skillsLink: "Compétences",
-    aboutTitle: "about",
+    aboutTitle: "à propos",
     bio: `En 2017, j'obtenais un diplôme d'études collégiales en techniques policières. Après quelques années dans le domaine, et de profondes
     réflexion, j'ai réalisé que j'étais destiné à quelque chose de plus stimulant mentalement. C'est à ce moment-là que j'ai commencé à explorer le développement Web et la
     programmation, qui a évolué vers une grande passion.
