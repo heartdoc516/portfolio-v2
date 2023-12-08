@@ -14,7 +14,6 @@ function setGradient(e) {
 
 document.addEventListener("mousemove", setGradient);
 
-// Function to set the active class based on the target element's visibility
 function setActiveClass() {
   var links = document.querySelectorAll(".link");
 
@@ -23,7 +22,6 @@ function setActiveClass() {
 
     var targetElement = document.getElementById(targetId);
 
-    // Get the target element's position
     var targetRect = targetElement.getBoundingClientRect();
     const projectEl = document.getElementById("experience");
     const top = projectEl.getBoundingClientRect().top;
@@ -35,15 +33,10 @@ function setActiveClass() {
         link.classList.remove("active");
       });
 
-      // Set the active class on the link associated with the in-view target element
       link.classList.add("active");
     }
   });
 }
-
-// Function to handle link clicks
-
-// Attach event listener to the scroll event
 
 rightPanelElement.addEventListener("scroll", setActiveClass);
 
@@ -170,11 +163,8 @@ function setLanguage(language, button) {
     btn.classList.remove("active-lang");
   });
 
-  // Add "active-lang" class to the clicked button
   button.classList.add("active-lang");
 }
-
-// Example: Set language to English
 
 const enButton = document.getElementById("enButton");
 const frButton = document.getElementById("frButton");
